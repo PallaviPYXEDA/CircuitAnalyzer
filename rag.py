@@ -121,7 +121,7 @@ def call_vision_api(image_path:str):
     prompt = "You are an expert assisstant trained to identify different electronic chip types. You are given an image of chip. Carefully go over the images and idenitfy the chip type."
 
     payload = {
-    "model": "gpt-4o-mini",
+    "model": QA_MODEL,
     "messages": [
         {
         "role": "user",
