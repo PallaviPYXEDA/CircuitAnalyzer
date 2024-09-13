@@ -103,6 +103,31 @@ def generate_answer(question: str) -> str:
     return answer
 
 
+def get_similar_context(question: str):
+    # get the query embeddings
+    quer_embed_data = get_openai_embeddings(question)
+
+    # query the similar chunks
+    similar_chunks = query_response(quer_embed_data)
+
+    # extract the similar text data
+    similar_content = content_extractor(similar_chunks)
+
+    return similar_content
+
+
+def streaming_question_answering(query_question: str, context_text: str,  template: str = COMMON_TEMPLATE):
+    prompt = ChatPromptTemplate.from_template(template)
+    model = get_model()
+    output_parser = StrOutputParser()
+
+    # create the chain
+    chain = prompt | model | output_parser
+
+    # get the answer
+    return chain.stream({"context": context_text, "question": query_question})
+
+
 # functions related to vision API
 def encode_image(image_path):
   with open(image_path, "rb") as image_file:
