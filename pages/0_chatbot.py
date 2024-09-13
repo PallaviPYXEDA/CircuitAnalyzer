@@ -3,7 +3,7 @@ import streamlit as st
 from rag import QA_MODEL, streaming_question_answering, get_similar_context
 
 
-st.title("Research Assistant 🤖")
+st.title("Circuit Assistant 🤖")
 
 # set openai key
 client = OpenAI(api_key= st.secrets["OPENAI_API_KEY"])
