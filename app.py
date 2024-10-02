@@ -24,7 +24,7 @@ st.title("Circuit Analyzer")
 # image
 st.image(IMAGE_ADDRESS, caption = "Circuit Master")
 with st.sidebar:
-       st.heading("Heading you wanted")
+       sidebar.heading("Heading you wanted")
 # Upload image
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
