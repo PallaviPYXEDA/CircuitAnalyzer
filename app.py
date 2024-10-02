@@ -6,14 +6,18 @@ import rag as rag_utils
 IMAGE_ADDRESS = "https://cdn.shopify.com/s/files/1/0552/3269/2430/articles/learning-electronics-comprehensive-guide-for-beginners.webp?v=1702560862"
 IMAGE_NAME = "uploaded_image.png"
 QUERY = "Could you please provide more information about the following chip type {chip}"
-st.markdown("""
-    <style>
-    .stForm {
-        background-color: #0000FF;
-    }
-    </style>
-""", unsafe_allow_html=True)
+page_bg_img = '''
+<style>
+body {
+    background-color: #ADD8E6;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+</style>
+'''
 
+# Inject the CSS style into the Streamlit app
+st.markdown(page_bg_img, unsafe_allow_html=True)
 # main web comps
 # title
 st.title("Circuit Analyzer")
