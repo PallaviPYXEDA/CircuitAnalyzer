@@ -6,7 +6,7 @@ import rag as rag_utils
 IMAGE_ADDRESS = "https://cdn.shopify.com/s/files/1/0552/3269/2430/articles/learning-electronics-comprehensive-guide-for-beginners.webp?v=1702560862"
 IMAGE_NAME = "uploaded_image.png"
 QUERY = "Could you please provide more information about the following chip type {chip}"
-page_bg_img = '''
+
 
 # main web comps
 
