@@ -7,24 +7,14 @@ IMAGE_ADDRESS = "https://cdn.shopify.com/s/files/1/0552/3269/2430/articles/learn
 IMAGE_NAME = "uploaded_image.png"
 QUERY = "Could you please provide more information about the following chip type {chip}"
 page_bg_img = '''
-<style>
-body {
-    background-color: blue;
-    color: black;
-    font-family: Arial, sans-serif;
-}
-</style>
-'''
 
-# Inject the CSS style into the Streamlit app
-st.markdown(page_bg_img, unsafe_allow_html=True)
 # main web comps
 # title
 st.title("Circuit Analyzer")
 # image
 st.image(IMAGE_ADDRESS, caption = "Circuit Master")
 with st.sidebar:
-       st.sidebar.heading("Heading you wanted")
+       st.header("Heading you wanted")
 # Upload image
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
