@@ -10,7 +10,10 @@ st.markdown('''
 <div style='background-color: #f0f2f6; padding: 10px; border-radius: 5px;'>
 
 
+    
+</div>
 
+''', unsafe_allow_html=True)
 # main web comps
 # title
 st.title("Circuit Analyzer")
@@ -56,7 +59,4 @@ if uploaded_file:
             st.write(get_info)
         
 
-    
-</div>
 
-''', unsafe_allow_html=True)
