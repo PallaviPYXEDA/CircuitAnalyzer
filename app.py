@@ -8,8 +8,8 @@ IMAGE_NAME = "uploaded_image.png"
 QUERY = "Could you please provide more information about the following chip type {chip}"
 st.markdown("""
     <style>
-    .st-emotion-cache-r421ms e10yg2by1 {
-        background-color: blue;
+    .stForm {
+        background-color: #000000;
     }
     </style>
 """, unsafe_allow_html=True)
