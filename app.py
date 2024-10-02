@@ -6,13 +6,13 @@ import rag as rag_utils
 IMAGE_ADDRESS = "https://cdn.shopify.com/s/files/1/0552/3269/2430/articles/learning-electronics-comprehensive-guide-for-beginners.webp?v=1702560862"
 IMAGE_NAME = "uploaded_image.png"
 QUERY = "Could you please provide more information about the following chip type {chip}"
-st.markdown("""
-<style>
-body {
-    background-color: #00ff00;
-}
-</style>
-""", unsafe_allow_html=True)
+st.markdown('''
+<div style='background-color: #f0f2f6; padding: 10px; border-radius: 5px;'>
+    <h1>This is a header with background color</h1>
+    <p>This is some text inside a div with background color.</p>
+</div>
+''', unsafe_allow_html=True)
+
 # main web comps
 # title
 st.title("Circuit Analyzer")
