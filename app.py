@@ -56,6 +56,7 @@ if uploaded_file:
         with st.sidebar:
             st.header("Chip Information")
             st.subheader("Uploaded Images")
+            st.heading("Heading you wanted")
             st.image(image, caption='Uploaded Image.', use_column_width=True)
             st.subheader("Chip Type")
             st.markdown(f"Chip Type: :red[{get_chip_type}]")
