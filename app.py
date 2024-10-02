@@ -9,6 +9,8 @@ QUERY = "Could you please provide more information about the following chip type
 page_bg_img = '''
 
 # main web comps
+
+
 # title
 st.title("Circuit Analyzer")
 # image
