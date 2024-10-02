@@ -23,7 +23,8 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 st.title("Circuit Analyzer")
 # image
 st.image(IMAGE_ADDRESS, caption = "Circuit Master")
-
+with st.sidebar:
+       st.heading("Heading you wanted")
 # Upload image
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
@@ -56,7 +57,6 @@ if uploaded_file:
         with st.sidebar:
             st.header("Chip Information")
             st.subheader("Uploaded Images")
-            st.heading("Heading you wanted")
             st.image(image, caption='Uploaded Image.', use_column_width=True)
             st.subheader("Chip Type")
             st.markdown(f"Chip Type: :red[{get_chip_type}]")
