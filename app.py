@@ -14,7 +14,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-''', unsafe_allow_html=True)
 # main web comps
 # title
 st.title("Circuit Analyzer")
