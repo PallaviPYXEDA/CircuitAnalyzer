@@ -8,10 +8,8 @@ IMAGE_NAME = "uploaded_image.png"
 QUERY = "Could you please provide more information about the following chip type {chip}"
 st.markdown('''
 <div style='background-color: #f0f2f6; padding: 10px; border-radius: 5px;'>
-    <h1>This is a header with background color</h1>
-    <p>This is some text inside a div with background color.</p>
-</div>
-''', unsafe_allow_html=True)
+
+
 
 # main web comps
 # title
@@ -59,5 +57,6 @@ if uploaded_file:
         
 
     
+</div>
 
-
+''', unsafe_allow_html=True)
