@@ -9,7 +9,7 @@ QUERY = "Could you please provide more information about the following chip type
 page_bg_img = '''
 <style>
 body {
-    background-color: #ADD8E6;
+    background-color: blue;
     color: black;
     font-family: Arial, sans-serif;
 }
