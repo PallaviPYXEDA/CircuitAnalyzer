@@ -9,7 +9,7 @@ QUERY = "Could you please provide more information about the following chip type
 st.markdown("""
     <style>
     .stForm {
-        background-color: #000000;
+        background-color: #0000FF;
     }
     </style>
 """, unsafe_allow_html=True)
