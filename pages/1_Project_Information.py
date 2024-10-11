@@ -1,13 +1,12 @@
 import streamlit as st
 
 st.title('Know the ICs better')
+
+
 st.markdown(
-    '<div style="text-align: center;">',
+    f'<div style="text-align: center;"><img src="img1" alt="Image" width="300"></div>',
     unsafe_allow_html=True
 )
-img1 = "img1.png"
-st.image(img1, caption="")
-st.markdown('</div>', unsafe_allow_html=True)
 
 
 st.header('About:')
