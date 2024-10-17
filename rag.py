@@ -143,7 +143,7 @@ def call_vision_api(image_path:str):
     "Authorization": f"Bearer {os.environ["OPENAI_API_KEY"]}"
     }
 
-    prompt = "You are an expert assisstant trained to identify different electronic chip types. You are given an image of chip. Carefully go over the images and idenitfy the basic category of chip type. If it falls under Analog ICs (Op-Amps, Voltage Regulators, ADCs),ASIC and SOC, Digital ICs (Microprocessors, Memory Chips, DSPs) and Mixed-Signal ICs (Modems, Codecs, Mixed-Signal Processors) categories. Please respond with the same category name as the answer else respond saying I don't know. "
+    prompt = "You are an expert assisstant trained to identify different electronic chip types. You are given an image of chip. Carefully go over the images and categorise in one out of four categories which are mentioned next. Analog ICs (Op-Amps, Voltage Regulators, ADCs),ASIC and SOC, Digital ICs (Microprocessors, Memory Chips, DSPs) and Mixed-Signal ICs (Modems, Codecs, Mixed-Signal Processors). Please respond with the same category name as the answer else respond saying I don't know. "
 
     payload = {
     "model": QA_MODEL,
