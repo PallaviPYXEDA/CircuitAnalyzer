@@ -143,7 +143,7 @@ def call_vision_api(image_path:str):
     "Authorization": f"Bearer {os.environ["OPENAI_API_KEY"]}"
     }
 
-    prompt = "You are an expert assisstant trained to identify different electronic chip types. You are given an image of a chip. First carefully go over the images and classify the image into one out of four categories which are mentioned next. Analog ICs (Op-Amps, Voltage Regulators, ADCs),ASIC and SOC, Digital ICs (Microprocessors, Memory Chips, DSPs) and Mixed-Signal ICs (Modems, Codecs, Mixed-Signal Processors). Please respond with only wiht the classified name at the end. If you can't classify the image into given 4 classes, please say you don't have the context."
+    prompt = "You are an expert assisstant trained to identify different electronic chip types. You are given an image of a chip. First carefully go over the images and classify the image into one out of four categories which are mentioned next. Analog ICs (Op-Amps, Voltage Regulators, ADCs),ASIC and SOC, Digital ICs (Microprocessors, Memory Chips, DSPs) and Mixed-Signal ICs (Modems, Codecs, Mixed-Signal Processors). Please respond with only the classified name. If you can't classify the image into given 4 classes, please say you don't have the context."
 
     payload = {
     "model": QA_MODEL,
